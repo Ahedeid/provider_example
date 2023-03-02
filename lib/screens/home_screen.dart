@@ -54,7 +54,7 @@ String? fName;
                 builder: (context, model, child) {
                   debugPrint(' this is Counter');
                   return Text(
-                    '${model}',
+                    '$model',
                     style: const TextStyle(fontSize: 15),
                   );
                 }),
