@@ -30,25 +30,25 @@
 
 // ---------------------------------- Class Provider ----------------------------------------------------//
 
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
-class Model extends ChangeNotifier {
-  String name = 'ahmed';
-  int count = 0;
+class ServesProvider extends ChangeNotifier {
+  String _name = 'ahmed';
+  int _count = 0;
 
   // هنا عند التعامل مع ال selector تعامل مع get
 
-  get nameUser => name;
+  get nameUser => _name;
 
-  get countUser => count;
+  get countUser => _count;
 
   changeName() {
-    name = 'ahed';
+    _name = 'ahed';
     notifyListeners();
   }
 
   counterIncrese() {
-    count ++;
+    _count ++;
     notifyListeners();
   }
 }
